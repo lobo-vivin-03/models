@@ -1,0 +1,83 @@
+{
+    "Syllabus_content": {
+        "MODULE - I": [
+            "Introduction : The evolving role of software",
+            "The changing nature of software",
+            "Softwareengineering",
+            "A Process Framework",
+            "Process Patterns",
+            "Process Assessment",
+            "Personal and Team Process Models",
+            "Process Technology",
+            "Product and Process",
+            "Process Models : Prescriptive models",
+            "Waterfall model",
+            "Incremental process models",
+            "Evolutionary process models",
+            "Specialized process models"
+        ],
+        "MODULE - II": [
+            "Introduction",
+            "Modelling Concepts and Class Modelling : What is Object orientation? What is OO -  development? OO Themes",
+            "Evidence for usefulness of OO development",
+            "OO modelling history",
+            "Modelling as Design technique: Modelling",
+            "abstraction",
+            "The Three models",
+            "Class Modelling: Object and Class Concept",
+            "Link and associations concepts",
+            "Generalization and Inheritance",
+            "A sample class model",
+            "Navigation of class models",
+            "and UML diagrams"
+        ],
+        "MODULE - III": [
+            "Software Testing: A Strategic Approach to Software Testing",
+            "Strategic Issues",
+            "Test Strategies for Conventional Software",
+            "Test Strategies for Object -Oriented Software",
+            "Validation Testing",
+            "System Testing",
+            "The Art of Debugging",
+            "Agile Methodology: Before Agile \u2013 Waterfall",
+            "Agile Development"
+        ],
+        "MODULE - IV": [
+            "Introduction to Project Management : Introduction",
+            "Project and Importance of Project Management",
+            "Contract Management",
+            "Activities Covered by Software Project Management",
+            "Plans",
+            "Methods and Methodologies",
+            "some ways of categorizing Software Projects",
+            "Stakeholders",
+            "Setting Objectives",
+            "Business Case",
+            "Project Success and Failure",
+            "Management and Management Control",
+            "Project Management life cycle",
+            "Traditional versus Modern Project Management Practices"
+        ],
+        "MODULE - V": [
+            "Activity Planning: Objectives of Activity Planning",
+            "When to Plan",
+            "Project Schedules",
+            "Sequencing and Scheduling Activities",
+            "Network Planning Models",
+            "Forward Pass \u2013 Backward Pass",
+            "identifying critical path",
+            "Activity Float",
+            "Shortening Project Duration",
+            "Activity on Arrow Netwo rks",
+            "Software Quality: Introduction",
+            "the place of software quality in project planning",
+            "Importance of software quality",
+            "software quality models",
+            "ISO 9126",
+            "quality management systems",
+            "process capability models",
+            "techniques to enhance software quality",
+            "quality p lans"
+        ]
+    }
+}
