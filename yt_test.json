@@ -1,0 +1,39 @@
+{
+    "SOFTWARE ENGINEERING & PROJECT MANAGEMENT": {
+        "Syllabus_content": {
+            "MODULE - I": [
+                "Introduction : The evolving role of software",
+                "The changing nature of software",
+                "Softwareengineering",
+                "A Process Framework",
+                "Process Patterns",
+                "Process Assessment"
+            ],
+            "MODULE - II": [
+                "Introduction",
+                "Modelling Concepts and Class Modelling : What is Object orientation? What is OO -  development? OO Themes",
+                "Evidence for usefulness of OO development",
+                "The Three models"
+            ],
+            "MODULE - III": [
+                "Software Testing: A Strategic Approach to Software Testing",
+                "Strategic Issues",
+                "Test Strategies for Conventional Software",
+                "Test Strategies for Object -Oriented Software"
+            ],
+            "MODULE - IV": [
+                "Introduction to Project Management : Introduction",
+                "Project and Importance of Project Management",
+                "Contract Management",
+                "Activities Covered by Software Project Management"
+            ],
+            "MODULE - V": [
+                "Activity Planning: Objectives of Activity Planning",
+                "When to Plan",
+                "Project Schedules",
+                "Sequencing and Scheduling Activities",
+                "Network Planning Models"
+            ]
+        }
+    }
+}
