@@ -4,7 +4,7 @@ import re
 import os
 
 # Path to the PDF file
-pdf_file_path = r"models/AIML.pdf"
+pdf_file_path = r"models/syllabus.pdf"
 
 def clean_text(text):
     """Clean text by removing unwanted characters and patterns."""
