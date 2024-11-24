@@ -1,39 +1,85 @@
 {
     "SOFTWARE ENGINEERING & PROJECT MANAGEMENT": {
-        "articles": {
-            "MODULE - I": [
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found"
-            ],
-            "MODULE - II": [
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found"
-            ],
-            "MODULE - III": [
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found"
-            ],
-            "MODULE - IV": [
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found"
-            ],
-            "MODULE - V": [
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found",
-                "No results found"
-            ]
+        "Syllabus_content": {
+            "MODULE - I": {
+                "Introduction : The evolving role of software": "https://www.geeksforgeeks.org/software-engineering-software-evolution/",
+                "The changing nature of software": "https://www.geeksforgeeks.org/software-engineering-changing-nature-of-software/",
+                "Softwareengineering": "https://www.geeksforgeeks.org/software-engineering-introduction-to-software-engineering/",
+                "A Process Framework": "https://www.geeksforgeeks.org/software-engineering-software-process-framework/",
+                "Process Patterns": "https://www.geeksforgeeks.org/process-patterns-in-software-engineering/",
+                "Process Assessment": "https://www.geeksforgeeks.org/software-process-assessment/",
+                "Personal and Team Process Models": "https://www.geeksforgeeks.org/difference-between-psp-and-tsp/",
+                "Process Technology": "https://www.cognizant.com/us/en/glossary/process-technology",
+                "Product and Process": "https://www.geeksforgeeks.org/difference-between-product-and-process/",
+                "Process Models : Prescriptive models": "https://www.tutorialride.com/software-engineering/prescriptive-process-models.htm",
+                "Waterfall model": "https://www.geeksforgeeks.org/waterfall-model/",
+                "Incremental process models": "https://www.geeksforgeeks.org/software-engineering-incremental-process-model/",
+                "Evolutionary process models": "https://www.geeksforgeeks.org/what-are-evolutionary-process-models/",
+                "Specialized process models": "https://dspmuranchi.ac.in/pdf/Blog/specialised%20process%20models.pdf"
+            },
+            "MODULE - II": {
+                "Introduction": "https://www.geeksforgeeks.org/software-engineering-introduction-to-software-engineering/",
+                "Modelling Concepts and Class Modelling : What is Object orientation? What is OO -  development? OO Themes": "https://www.geeksforgeeks.org/object-oriented-analysis-and-design/",
+                "Evidence for usefulness of OO development": "https://www.geeksforgeeks.org/object-oriented-analysis-and-design/",
+                "OO modelling history": "https://www.geeksforgeeks.org/object-oriented-analysis-and-design/",
+                "Modelling as Design technique: Modelling": "https://www.geeksforgeeks.org/software-engineering-object-modeling-technique-omt/",
+                "abstraction": "https://www.geeksforgeeks.org/introduction-of-software-design-process-set-2/",
+                "The Three models": "https://www.geeksforgeeks.org/top-8-software-development-models-used-in-industry/",
+                "Class Modelling: Object and Class Concept": "https://www.geeksforgeeks.org/types-of-models-in-object-oriented-modeling-and-design/",
+                "Link and associations concepts": "https://www.scribd.com/presentation/421197481/Links-and-Associations",
+                "Generalization and Inheritance": "https://www.geeksforgeeks.org/generalization-in-ooad/",
+                "A sample class model": "https://www.geeksforgeeks.org/types-of-models-in-object-oriented-modeling-and-design/",
+                "Navigation of class models": "https://slideplayer.com/slide/6967414/",
+                "and UML diagrams": "https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/"
+            },
+            "MODULE - III": {
+                "Software Testing: A Strategic Approach to Software Testing": "https://www.geeksforgeeks.org/software-testing-strategies/",
+                "Strategic Issues": "https://www.geeksforgeeks.org/software-testing-strategies/",
+                "Test Strategies for Conventional Software": "https://www.geeksforgeeks.org/software-testing-strategies/",
+                "Test Strategies for Object -Oriented Software": "https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing",
+                "Validation Testing": "https://www.tutorialspoint.com/software_testing_dictionary/validation_testing.htm",
+                "System Testing": "https://www.geeksforgeeks.org/system-testing/",
+                "The Art of Debugging": "https://www.geeksforgeeks.org/software-engineering-debugging/",
+                "Agile Methodology: Before Agile \u2013 Waterfall": "https://www.geeksforgeeks.org/agile-vs-waterfall/",
+                "Agile Development": "https://www.geeksforgeeks.org/software-engineering-agile-software-development/"
+            },
+            "MODULE - IV": {
+                "Introduction to Project Management : Introduction": "https://www.geeksforgeeks.org/software-engineering-software-project-management-spm/",
+                "Project and Importance of Project Management": "https://www.geeksforgeeks.org/software-engineering-software-project-management-spm/",
+                "Contract Management": "https://www.geeksforgeeks.org/difference-between-project-management-and-contract-management/",
+                "Activities Covered by Software Project Management": "https://www.javatpoint.com/software-project-management-activities",
+                "Plans": "https://www.javatpoint.com/software-project-planning",
+                "Methods and Methodologies": "https://www.simplilearn.com/software-development-methodologies-article",
+                "some ways of categorizing Software Projects": "https://www.geeksforgeeks.org/categories-of-project/",
+                "Stakeholders": "https://www.geeksforgeeks.org/stakeholder-software-engineering/",
+                "Setting Objectives": "https://www.geeksforgeeks.org/software-engineering-introduction-to-software-engineering/",
+                "Business Case": "https://www.geeksforgeeks.org/what-is-involved-in-a-business-case-in-project-management/",
+                "Project Success and Failure": "https://www.orientsoftware.com/blog/software-project-failure/",
+                "Management and Management Control": "https://intellipaat.com/blog/management-control-system/",
+                "Project Management life cycle": "https://www.geeksforgeeks.org/project-management-life-cycle/",
+                "Traditional versus Modern Project Management Practices": "https://medium.com/design-bootcamp/traditional-project-manager-vs-modern-project-manager-a3608f544293"
+            },
+            "MODULE - V": {
+                "Activity Planning: Objectives of Activity Planning": "http://ggn.dronacharya.info/Mtech_CSE/Downloads/QuestionBank/IIISem/SoftwareProjectManagement/Section-C/OBJECTIVES_ACTIVITY_PLANNING_12052016.pdf",
+                "When to Plan": "https://www.javatpoint.com/software-project-planning",
+                "Project Schedules": "https://www.geeksforgeeks.org/short-note-on-project-scheduling/",
+                "Sequencing and Scheduling Activities": "https://www.rcet.org.in/uploads/academics/rohini_91668207065.pdf",
+                "Network Planning Models": "https://rcet.org.in/uploads/academics/rohini_52588584177.pdf",
+                "Forward Pass \u2013 Backward Pass": "https://tiemchart.com/blogs/training/forward-pass-and-backward-pass/",
+                "identifying critical path": "https://www.geeksforgeeks.org/software-engineering-critical-path-method/",
+                "Activity Float": "https://www.geeksforgeeks.org/what-is-float-in-project-management/",
+                "Shortening Project Duration": "https://www.teamly.com/blog/methods-for-shortening-a-project-schedule/",
+                "Activity on Arrow Netwo rks": "https://www.projectmanager.com/blog/arrow-diagrams-activity-on-node-activity-on-arrow",
+                "Software Quality: Introduction": "https://www.geeksforgeeks.org/software-engineering-software-quality/",
+                "the place of software quality in project planning": "https://ggn.dronacharya.info/ITDept/Downloads/QuestionBank/Odd/VIIsem/SPM/Section-D/SPM_3.pdf",
+                "Importance of software quality": "https://www.geeksforgeeks.org/software-engineering-software-quality/",
+                "software quality models": "https://www.geeksforgeeks.org/boehms-software-quality-model/",
+                "ISO 9126": "https://www.geeksforgeeks.org/iso-iec-9126-in-software-engineering/",
+                "quality management systems": "https://www.geeksforgeeks.org/software-engineering-software-quality/",
+                "process capability models": "https://www.geeksforgeeks.org/software-engineering-capability-maturity-model-cmm/",
+                "techniques to enhance software quality": "https://www.browserstack.com/guide/how-to-improve-software-quality",
+                "quality p lans": "https://www.geeksforgeeks.org/quality-planning-in-software-engineering/"
+            }
         }
     }
 }

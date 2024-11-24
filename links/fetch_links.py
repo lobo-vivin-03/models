@@ -2,10 +2,9 @@ import json
 import os
 import requests
 from bs4 import BeautifulSoup
+import time
 
 # Function to perform a Google search
-import time  # Import time module
-
 def search_google(topic, subject_name, num_results=1):
     query = f"{topic} in {subject_name}"
     search_url = f"https://www.google.com/search?q={query}&num={num_results}"
@@ -15,22 +14,43 @@ def search_google(topic, subject_name, num_results=1):
     try:
         response = requests.get(search_url, headers=headers, timeout=10)
         response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        links = []
+        for item in soup.select('div.tF2Cxc a'):  # Selector for links
+            link = item.get('href')
+            if link.startswith("http"):
+                links.append(link)
+        time.sleep(1)  # Delay between requests to avoid being blocked
+        return links[:num_results]
     except requests.exceptions.RequestException as e:
-        print(f"Error: Unable to fetch search results for '{query}' - {e}")
+        print(f"Error: {e}")
         return []
 
-    soup = BeautifulSoup(response.text, 'html.parser')
+# Function to perform an advanced fallback search
+def fallback_search(topic, subject_name):
+    # Additional context words to refine the search
+    context_keywords = ["overview", "tutorial", "lecture notes"]
+    fallback_links = []
 
-    # Extract valid links using updated selectors
-    links = []
-    for item in soup.select('a[href^="/url?q="]'):
-        href = item.get('href').split('/url?q=')[1].split('&')[0]
-        if href.startswith("http"):
-            links.append(href)
+    for keyword in context_keywords:
+        refined_query = f"{topic} {keyword} in {subject_name}"
+        print(f"Refining search with query: '{refined_query}'")
+        refined_links = search_google(refined_query, subject_name, num_results=2)
+        if refined_links:
+            fallback_links.extend(refined_links)
+            break  # Stop if we get any results
 
-    time.sleep(1)  # Add a delay of 2 seconds between searches
-    return links[:num_results]
+    # Additional site-specific search
+    site_searches = ["geeksforgeeks.org", "javatpoint.com", "medium.com"]
+    for site in site_searches:
+        site_query = f"{topic} site:{site}"
+        print(f"Site-specific search: '{site_query}'")
+        site_links = search_google(site_query, subject_name, num_results=2)
+        if site_links:
+            fallback_links.extend(site_links)
+            break  # Stop if we get any results
 
+    return fallback_links[:3] if fallback_links else ["No results found"]
 
 # Load syllabus data
 def load_syllabus(file_path):
@@ -47,13 +67,16 @@ def load_syllabus(file_path):
 def find_article_links(syllabus_content, subject_name):
     article_links = {}
     for module, topics in syllabus_content.items():
-        module_links = []
+        module_links = {}
         for topic in topics:
             print(f"Searching articles for topic: '{topic}' in module: '{module}'")
             links = search_google(topic, subject_name)
-            module_links.extend(links if links else ["No results found"])
-        article_links[module] = module_links  # Aggregate links for each module
-    return {"articles": article_links}
+            if not links:  # If no links found, use fallback method
+                print(f"No initial results found for '{topic}'. Trying fallback search...")
+                links = fallback_search(topic, subject_name)
+            module_links[topic] = links[0] if links else "No results found"
+        article_links[module] = module_links
+    return {"Syllabus_content": article_links}
 
 # Save the results to a JSON file
 def save_results(data, output_file):
@@ -66,7 +89,7 @@ def save_results(data, output_file):
 
 # Main function
 def main():
-    syllabus_file = "models/yt_test.json"
+    syllabus_file = "models/syllabus.json"
     output_file = "models/links/article_links.json"
 
     # Load syllabus data
