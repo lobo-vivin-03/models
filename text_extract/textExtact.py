@@ -4,7 +4,7 @@ import re
 import os
 
 # Path to the PDF file
-pdf_file_path = r"models/syllabus.pdf"
+pdf_file_path = r"models/AIML.pdf"
 
 def clean_text(text):
     """Clean text by removing unwanted characters and patterns."""
@@ -64,7 +64,7 @@ def extract_syllabus_content_as_array(pdf_filename):
                     syllabus_content += page_content
 
             # Split by modules using regex
-            module_pattern = r"(MODULE\s-\s[IVX]+)"
+            module_pattern = r"(MODULE\s.\s[IVX]+)"
             modules = re.split(module_pattern, syllabus_content)
 
             module_contents = {}
